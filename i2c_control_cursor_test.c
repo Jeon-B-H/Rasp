@@ -7,11 +7,10 @@
 
 int main() {
     int fd = wiringPiI2CSetup(0x48); 
-
     int value_x, value_y;
     
     // 초기 설정
-    // 처음 화면에서 커서가 중앙에 위치하도록 설
+    // 처음 화면에서 커서가 중앙에 위치하도록 설정
     int x = MAX_X / 2, y = MAX_Y / 2; 
 
     printf("\033[2J");  // 화면 지우기
